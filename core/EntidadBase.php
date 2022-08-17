@@ -28,7 +28,7 @@ class EntidadBase{
            $resultSet[]=$row;
         }
          
-        return $resultSet;
+        return $resultSet ?? null;
     }
      
     public function getById($id){

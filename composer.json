@@ -1,0 +1,19 @@
+{
+    "name": "dbanegas/ejemplo-php-poo-mvc",
+    "autoload": {
+        "psr-4": {
+            "Dbanegas\\EjemploPhpPooMvc\\": "src/",
+            "files": ["config/database.php", "config/global.php"]
+        }
+    },
+    "authors": [
+        {
+            "name": "DanielBanegas",
+            "email": "dbanegas.cue@gmail.com"
+        }
+    ],
+    "require": {
+        "fpdo/fluentpdo": "^2.2",
+        "envms/fluentpdo": "^2.2"
+    }
+}

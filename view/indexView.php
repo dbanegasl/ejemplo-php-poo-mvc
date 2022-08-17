@@ -32,6 +32,7 @@
             <hr/>
         </div>
         <section class="col-lg-7 usuario" style="height:400px;overflow-y:scroll;">
+            <?php if($allusers){ ?>
             <?php foreach($allusers as $user) { //recorremos el array de objetos y obtenemos el valor de las propiedades ?>
                 <?php echo $user->id; ?> -
                 <?php echo $user->nombre; ?> -
@@ -41,6 +42,11 @@
                     <a href="<?php echo $helper->url("usuarios","borrar"); ?>&id=<?php echo $user->id; ?>" class="btn btn-danger">Borrar</a>
                 </div>
                 <hr/>
+            <?php } ?>
+            <?php }else{ ?>
+                <div class="alert alert-warning">
+                    Sin registros
+                </div>
             <?php } ?>
         </section>
         <footer class="col-lg-12">

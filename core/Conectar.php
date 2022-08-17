@@ -1,4 +1,5 @@
 <?php
+
 class Conectar{
     private $driver;
     private $host, $user, $pass, $database, $charset;

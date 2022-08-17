@@ -53,7 +53,7 @@ class Usuario extends EntidadBase{
  
     public function save(){
         $query="INSERT INTO usuarios (id,nombre,apellido,email,password)
-                VALUES(NULL,
+                VALUES(null,
                        '".$this->nombre."',
                        '".$this->apellido."',
                        '".$this->email."',
